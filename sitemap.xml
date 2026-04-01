@@ -1,45 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tiagobento.github.io/cliqueutil/index.html</loc>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/cara-ou-coroa.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tiagobento.github.io/cliqueutil/sobre.html</loc>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/contador-regressivo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tiagobento.github.io/cliqueutil/privacidade.html</loc>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/dado-online.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tiagobento.github.io/cliqueutil/termos.html</loc>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/diferenca-datas.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tiagobento.github.io/cliqueutil/percentagens.html</loc>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/dividir-conta.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tiagobento.github.io/cliqueutil/dividir-conta.html</loc>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/gerador-usernames.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tiagobento.github.io/cliqueutil/diferenca-datas.html</loc>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://tiagobento.github.io/cliqueutil/sorteador-nomes.html</loc>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/percentagens.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tiagobento.github.io/cliqueutil/cara-ou-coroa.html</loc>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/pomodoro.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tiagobento.github.io/cliqueutil/dado-online.html</loc>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/privacidade.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tiagobento.github.io/cliqueutil/pomodoro.html</loc>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/simulador-poupanca.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tiagobento.github.io/cliqueutil/simulador-poupanca.html</loc>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/sobre.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tiagobento.github.io/cliqueutil/contador-regressivo.html</loc>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/sorteador-nomes.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tiagobento.github.io/cliqueutil/gerador-usernames.html</loc>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/termos.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

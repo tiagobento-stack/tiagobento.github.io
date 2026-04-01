@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://tiagobento.github.io/cliqueutil/sitemap.xml
+Sitemap: https://tiagobento-stack.github.io/tiagobento.github.io/sitemap.xml
