@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sorteador de número aleatório · CliqueÚtil</title>
-    <meta name="description" content="Escolha um número aleatório entre um mínimo e um máximo.">
-    <link rel="canonical" href="https://tiagobento-stack.github.io/tiagobento.github.io/sorteador-numero.html">
+    <title>Gerador de PIN aleatório · CliqueÚtil</title>
+    <meta name="description" content="Crie códigos PIN de 4 ou 6 dígitos para testes e exemplos.">
+    <link rel="canonical" href="https://tiagobento-stack.github.io/tiagobento.github.io/gerador-pin.html">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
-<body data-tool="sorteador-numero">
+<body data-tool="gerador-pin">
 
     <header class="site-header">
       <div class="wrapper topbar">
@@ -33,38 +33,38 @@
           <span>·</span>
           <span>Sem registo</span>
         </div>
-        <h1>Sorteador de número aleatório</h1>
-        <p class="intro">Defina um intervalo e obtenha um número aleatório inteiro. É útil para sorteios simples, jogos e decisões rápidas.</p>
+        <h1>Gerador de PIN aleatório</h1>
+        <p class="intro">Gere códigos PIN simples de 4 ou 6 dígitos para exemplos, testes, protótipos e simulações. Não substitui sistemas de segurança reais.</p>
         
         <div class="form-grid">
-          <div><label for="rand-min">Mínimo</label><input id="rand-min" type="number" step="1" placeholder="Ex.: 1"></div>
-          <div><label for="rand-max">Máximo</label><input id="rand-max" type="number" step="1" placeholder="Ex.: 100"></div>
+          <div><label for="pin-length">Comprimento</label><select id="pin-length"><option value="4">4 dígitos</option><option value="6">6 dígitos</option></select></div>
+          <div><label for="pin-count">Quantidade</label><input id="pin-count" type="number" min="1" max="10" value="5"></div>
         </div>
-        <div style="margin-top:14px"><button id="rand-btn">Sortear número</button></div>
-        <div id="rand-result" class="result"><strong>Defina o intervalo e clique em sortear.</strong></div>
+        <div style="margin-top:14px"><button id="pin-btn">Gerar PIN</button></div>
+        <div id="pin-result" class="result"><strong>Escolha o formato e clique em gerar.</strong></div>
         
         <div class="notice">Pode usar esta ferramenta quantas vezes quiser no telemóvel ou no computador.</div>
       </section>
       <aside class="related">
         <div class="card aside-box">
           <h3>Como usar</h3>
-          <ul><li>Escolha o valor mínimo.</li><li>Escolha o valor máximo.</li><li>Clique em sortear para obter um número inteiro.</li></ul>
+          <ul><li>Escolha 4 ou 6 dígitos.</li><li>Indique quantos códigos quer gerar.</li><li>Clique no botão para ver os PIN.</li></ul>
         </div>
         <div class="card aside-box" style="margin-top:16px">
           <h3>Ferramentas relacionadas</h3>
-          <ul><li><a href="sorteador-nomes.html">Sorteador de nomes</a></li><li><a href="cara-ou-coroa.html">Cara ou coroa online</a></li><li><a href="dado-online.html">Dado online</a></li><li><a href="contador-regressivo.html">Contador regressivo</a></li></ul>
+          <ul><li><a href="gerador-passwords.html">Gerador de passwords</a></li><li><a href="sorteador-numero.html">Sorteador de número aleatório</a></li><li><a href="cara-ou-coroa.html">Cara ou coroa online</a></li><li><a href="dado-online.html">Dado online</a></li></ul>
         </div>
       </aside>
     </div>
     <section class="section">
       <h2>FAQ rápida</h2>
-      <div class="faq"><article class="card faq-item"><h3>Inclui os extremos?</h3><p>Sim. O resultado pode ser exatamente o mínimo ou o máximo.</p></article><article class="card faq-item"><h3>Posso repetir várias vezes?</h3><p>Sim. Pode voltar a sortear quantas vezes quiser.</p></article></div>
+      <div class="faq"><article class="card faq-item"><h3>Os códigos são únicos?</h3><p>Nesta versão tenta gerar uma lista sem repetir dentro do mesmo lote.</p></article><article class="card faq-item"><h3>Posso usar estes PIN para segurança real?</h3><p>Não é aconselhável. É uma ferramenta simples para exemplos e testes.</p></article></div>
     </section>
     <section class="section">
       <div class="card panel">
         <h2>Também pode ser útil</h2>
         <p>Se esta página não resolver exatamente o que procura, experimente uma das ferramentas abaixo. Muitas tarefas do dia a dia acabam por precisar de mais do que uma conta ou utilitário.</p>
-        <div class="inline-links"><a class="button secondary" href="sorteador-nomes.html">Sorteador de nomes</a><a class="button secondary" href="cara-ou-coroa.html">Cara ou coroa online</a><a class="button secondary" href="dado-online.html">Dado online</a><a class="button secondary" href="contador-regressivo.html">Contador regressivo</a></div>
+        <div class="inline-links"><a class="button secondary" href="gerador-passwords.html">Gerador de passwords</a><a class="button secondary" href="sorteador-numero.html">Sorteador de número aleatório</a><a class="button secondary" href="cara-ou-coroa.html">Cara ou coroa online</a><a class="button secondary" href="dado-online.html">Dado online</a></div>
       </div>
     </section>
   </main>
@@ -78,7 +78,7 @@
         </div>
         <div>
           <h3>Ferramentas</h3>
-          <ul><li><a href="percentagens.html">Calculadora de percentagens</a></li><li><a href="dividir-conta.html">Dividir conta por amigos</a></li><li><a href="diferenca-datas.html">Diferença entre datas</a></li><li><a href="calculadora-imc.html">Calculadora de IMC</a></li><li><a href="regra-de-tres.html">Regra de três simples</a></li><li><a href="gerador-passwords.html">Gerador de passwords</a></li></ul>
+          <ul><li><a href="percentagens.html">Calculadora de percentagens</a></li><li><a href="calculadora-iva.html">Calculadora de IVA</a></li><li><a href="calculadora-desconto.html">Calculadora de desconto</a></li><li><a href="calculadora-imc.html">Calculadora de IMC</a></li><li><a href="gerador-passwords.html">Gerador de passwords</a></li><li><a href="contador-palavras.html">Contador de palavras</a></li></ul>
         </div>
         <div>
           <h3>Páginas</h3>

@@ -1,11 +1,23 @@
-# CliqueÚtil — versão 2
+# CliqueÚtil — versão 3
 
 Esta versão já traz:
-- 20 ferramentas no total
-- mais páginas internas e mais links entre ferramentas
-- novas categorias: calculadoras, datas e tempo, aleatório, texto, produtividade e saúde
+- 30 ferramentas no total
+- 10 novas páginas úteis
+- homepage atualizada
+- mais links internos entre ferramentas
 - sitemap.xml e robots.txt atualizados
-- homepage mais completa
+
+## Novas ferramentas
+- Calculadora de IVA
+- Conversor de km para milhas
+- Conversor de temperatura
+- Calculadora de salário por hora
+- Calculadora de desconto
+- Contador de palavras
+- Extrator de linhas aleatórias
+- Remover linhas duplicadas
+- Removedor de linhas vazias
+- Gerador de PIN aleatório
 
 ## Como substituir no GitHub
 1. Descarregue este ZIP.

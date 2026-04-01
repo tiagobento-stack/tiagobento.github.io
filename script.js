@@ -37,6 +37,16 @@ document.addEventListener('DOMContentLoaded', () => {
   if(page === 'conversor-tempo') initConversorTempo();
   if(page === 'calculadora-idade') initCalculadoraIdade();
   if(page === 'orcamento-mensal') initOrcamentoMensal();
+  if(page === 'calculadora-iva') initCalculadoraIVA();
+  if(page === 'conversor-km-milhas') initConversorKmMilhas();
+  if(page === 'conversor-temperatura') initConversorTemperatura();
+  if(page === 'salario-hora') initSalarioHora();
+  if(page === 'calculadora-desconto') initCalculadoraDesconto();
+  if(page === 'contador-palavras') initContadorPalavras();
+  if(page === 'extrator-linhas') initExtratorLinhas();
+  if(page === 'texto-unico') initTextoUnico();
+  if(page === 'removedor-linhas-vazias') initRemovedorLinhasVazias();
+  if(page === 'gerador-pin') initGeradorPIN();
 });
 
 function initPercentagens(){
@@ -391,4 +401,177 @@ function initOrcamentoMensal(){
     setHtml('budget-result', `<strong>Margem do mês: ${moneyEUR(remaining)}</strong><div class="muted">Despesas totais: ${moneyEUR(totalExpenses)} · Percentagem livre: ${rate.toFixed(1)}%</div>`);
   }
   document.getElementById('budget-btn')?.addEventListener('click', calc);
+}
+
+
+function initCalculadoraIVA(){
+  function calc(){
+    const base = parseFloat(document.getElementById('vat-base').value.replace(',', '.'));
+    const rate = parseFloat(document.getElementById('vat-rate').value.replace(',', '.'));
+    if([base, rate].some(v => Number.isNaN(v))){
+      setHtml('vat-result', '<strong>Preencha o preço base e a taxa de IVA.</strong>');
+      return;
+    }
+    const vat = base * rate / 100;
+    const total = base + vat;
+    setHtml('vat-result', `<strong>IVA: ${moneyEUR(vat)}</strong><div class="muted">Preço base: ${moneyEUR(base)} · Total com IVA: ${moneyEUR(total)}</div>`);
+  }
+  document.getElementById('vat-btn')?.addEventListener('click', calc);
+}
+
+function initConversorKmMilhas(){
+  function convert(){
+    const value = parseFloat(document.getElementById('kmmi-value').value.replace(',', '.'));
+    const unit = document.getElementById('kmmi-unit').value;
+    if(Number.isNaN(value)){
+      setHtml('kmmi-result', '<strong>Introduza um valor válido.</strong>');
+      return;
+    }
+    if(unit === 'km'){
+      const miles = value * 0.621371;
+      setHtml('kmmi-result', `<strong>${value.toFixed(2)} km = ${miles.toFixed(2)} milhas</strong><div class="muted">Conversão rápida de quilómetros para milhas.</div>`);
+    } else {
+      const km = value / 0.621371;
+      setHtml('kmmi-result', `<strong>${value.toFixed(2)} milhas = ${km.toFixed(2)} km</strong><div class="muted">Conversão rápida de milhas para quilómetros.</div>`);
+    }
+  }
+  document.getElementById('kmmi-btn')?.addEventListener('click', convert);
+}
+
+function initConversorTemperatura(){
+  function convert(){
+    const value = parseFloat(document.getElementById('temp-value').value.replace(',', '.'));
+    const unit = document.getElementById('temp-unit').value;
+    if(Number.isNaN(value)){
+      setHtml('temp-result', '<strong>Introduza uma temperatura válida.</strong>');
+      return;
+    }
+    if(unit === 'c'){
+      const f = (value * 9 / 5) + 32;
+      setHtml('temp-result', `<strong>${value.toFixed(1)} °C = ${f.toFixed(1)} °F</strong><div class="muted">Conversão de Celsius para Fahrenheit.</div>`);
+    } else {
+      const c = (value - 32) * 5 / 9;
+      setHtml('temp-result', `<strong>${value.toFixed(1)} °F = ${c.toFixed(1)} °C</strong><div class="muted">Conversão de Fahrenheit para Celsius.</div>`);
+    }
+  }
+  document.getElementById('temp-btn')?.addEventListener('click', convert);
+}
+
+function initSalarioHora(){
+  function calc(){
+    const month = parseFloat(document.getElementById('salary-month').value.replace(',', '.'));
+    const hoursWeek = parseFloat(document.getElementById('salary-hours').value.replace(',', '.'));
+    if([month, hoursWeek].some(v => Number.isNaN(v)) || hoursWeek <= 0){
+      setHtml('salary-result', '<strong>Preencha salário e horas semanais com valores válidos.</strong>');
+      return;
+    }
+    const monthHours = hoursWeek * 4.33;
+    const hourValue = month / monthHours;
+    const dayValue = hourValue * 8;
+    setHtml('salary-result', `<strong>Valor por hora estimado: ${moneyEUR(hourValue)}</strong><div class="muted">Horas mensais médias: ${monthHours.toFixed(1)} · Valor por dia de 8h: ${moneyEUR(dayValue)}</div>`);
+  }
+  document.getElementById('salary-btn')?.addEventListener('click', calc);
+}
+
+function initCalculadoraDesconto(){
+  function calc(){
+    const base = parseFloat(document.getElementById('discount-base').value.replace(',', '.'));
+    const rate = parseFloat(document.getElementById('discount-rate').value.replace(',', '.'));
+    if([base, rate].some(v => Number.isNaN(v))){
+      setHtml('discount-result', '<strong>Preencha o preço original e o desconto.</strong>');
+      return;
+    }
+    const saving = base * rate / 100;
+    const finalPrice = base - saving;
+    setHtml('discount-result', `<strong>Preço final: ${moneyEUR(finalPrice)}</strong><div class="muted">Poupança: ${moneyEUR(saving)} · Desconto aplicado: ${rate}%</div>`);
+  }
+  document.getElementById('discount-btn')?.addEventListener('click', calc);
+}
+
+function initContadorPalavras(){
+  function count(){
+    const text = document.getElementById('word-text').value || '';
+    const words = (text.trim().match(/\S+/g) || []).length;
+    const chars = text.length;
+    const sentences = (text.match(/[.!?]+/g) || []).length;
+    const readMinutes = words === 0 ? 0 : Math.max(1, Math.ceil(words / 200));
+    setHtml('word-result', `<strong>${integer(words)} palavras</strong><div class="muted">Caracteres: ${integer(chars)} · Frases: ${integer(sentences)} · Leitura estimada: ${integer(readMinutes)} min</div>`);
+  }
+  document.getElementById('word-btn')?.addEventListener('click', count);
+}
+
+function initExtratorLinhas(){
+  function extract(){
+    const text = document.getElementById('pick-text').value || '';
+    const count = parseInt(document.getElementById('pick-count').value, 10) || 1;
+    const lines = text.split(/\n/).map(v => v.trim()).filter(Boolean);
+    if(lines.length === 0){
+      setHtml('pick-result', '<strong>Cole pelo menos uma linha com texto.</strong>');
+      return;
+    }
+    const pool = [...lines];
+    const out = [];
+    while(pool.length && out.length < count){
+      const index = Math.floor(Math.random() * pool.length);
+      out.push(pool.splice(index, 1)[0]);
+    }
+    setHtml('pick-result', `<strong>Linhas extraídas: ${integer(out.length)}</strong><pre>${safeText(out.join('\n'))}</pre>`);
+  }
+  document.getElementById('pick-btn')?.addEventListener('click', extract);
+}
+
+function initTextoUnico(){
+  function clean(){
+    const text = document.getElementById('unique-text').value || '';
+    const lines = text.split(/\n/).map(v => v.trim()).filter(Boolean);
+    if(lines.length === 0){
+      setHtml('unique-result', '<strong>Cole texto antes de remover duplicados.</strong>');
+      return;
+    }
+    const seen = new Set();
+    const unique = [];
+    for(const line of lines){
+      const key = line.toLowerCase();
+      if(!seen.has(key)){
+        seen.add(key);
+        unique.push(line);
+      }
+    }
+    setHtml('unique-result', `<strong>Linhas únicas: ${integer(unique.length)}</strong><pre>${safeText(unique.join('\n'))}</pre>`);
+  }
+  document.getElementById('unique-btn')?.addEventListener('click', clean);
+}
+
+function initRemovedorLinhasVazias(){
+  function clean(){
+    const text = document.getElementById('blank-text').value || '';
+    if(!text.trim()){
+      setHtml('blank-result', '<strong>Cole algum texto antes de limpar.</strong>');
+      return;
+    }
+    const cleaned = text.split(/\n/).filter(line => line.trim() !== '').join('\n');
+    setHtml('blank-result', `<strong>Texto sem linhas vazias</strong><pre>${safeText(cleaned)}</pre>`);
+  }
+  document.getElementById('blank-btn')?.addEventListener('click', clean);
+}
+
+function initGeradorPIN(){
+  function generate(){
+    const length = parseInt(document.getElementById('pin-length').value, 10) || 4;
+    const count = Math.min(parseInt(document.getElementById('pin-count').value, 10) || 1, 10);
+    const seen = new Set();
+    const out = [];
+    while(out.length < count){
+      let pin = '';
+      for(let i=0; i<length; i++){
+        pin += Math.floor(Math.random() * 10);
+      }
+      if(!seen.has(pin)){
+        seen.add(pin);
+        out.push(pin);
+      }
+    }
+    setHtml('pin-result', `<strong>PIN gerados</strong><pre>${safeText(out.join('\n'))}</pre>`);
+  }
+  document.getElementById('pin-btn')?.addEventListener('click', generate);
 }
