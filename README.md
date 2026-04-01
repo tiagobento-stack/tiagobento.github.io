@@ -1,10 +1,11 @@
-# CliqueÚtil — versão atualizada
+# CliqueÚtil — versão 2
 
 Esta versão já traz:
-- textos mais limpos na homepage
-- páginas legais mais simples
-- URLs canónicas corrigidas para o seu site
-- robots.txt e sitemap.xml atualizados
+- 20 ferramentas no total
+- mais páginas internas e mais links entre ferramentas
+- novas categorias: calculadoras, datas e tempo, aleatório, texto, produtividade e saúde
+- sitemap.xml e robots.txt atualizados
+- homepage mais completa
 
 ## Como substituir no GitHub
 1. Descarregue este ZIP.

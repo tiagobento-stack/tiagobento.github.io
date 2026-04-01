@@ -1,73 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/cara-ou-coroa.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/contador-regressivo.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/dado-online.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/diferenca-datas.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/dividir-conta.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/gerador-usernames.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://tiagobento-stack.github.io/tiagobento.github.io/index.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/percentagens.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/pomodoro.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/privacidade.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/simulador-poupanca.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tiagobento-stack.github.io/tiagobento.github.io/sobre.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/sorteador-nomes.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/privacidade.html</loc>
   </url>
   <url>
     <loc>https://tiagobento-stack.github.io/tiagobento.github.io/termos.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/percentagens.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/dividir-conta.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/diferenca-datas.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/sorteador-nomes.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/cara-ou-coroa.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/dado-online.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/pomodoro.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/simulador-poupanca.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/contador-regressivo.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/gerador-usernames.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/calculadora-imc.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/regra-de-tres.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/media-notas.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/sorteador-numero.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/gerador-passwords.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/contador-caracteres.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/removedor-espacos.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/conversor-tempo.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/calculadora-idade.html</loc>
+  </url>
+  <url>
+    <loc>https://tiagobento-stack.github.io/tiagobento.github.io/orcamento-mensal.html</loc>
   </url>
 </urlset>

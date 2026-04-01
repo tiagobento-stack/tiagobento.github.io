@@ -116,3 +116,8 @@ footer{
   .grid,.form-grid,.stats{grid-template-columns:1fr}
   .topbar{align-items:flex-start;flex-direction:column}
 }
+
+textarea{min-height:120px;resize:vertical}
+.result ul{margin:8px 0 0;padding-left:18px}
+.result pre{white-space:pre-wrap;margin:10px 0 0;padding:12px;border-radius:12px;background:#fff;border:1px dashed var(--line);font:inherit}
+.section .grid .tool-card{min-height:205px}

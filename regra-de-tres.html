@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Calculadora de percentagens · CliqueÚtil</title>
-    <meta name="description" content="Descubra percentagens, descontos e aumentos em segundos.">
-    <link rel="canonical" href="https://tiagobento-stack.github.io/tiagobento.github.io/percentagens.html">
+    <title>Regra de três simples · CliqueÚtil</title>
+    <meta name="description" content="Resolva proporções rápidas com uma conta direta.">
+    <link rel="canonical" href="https://tiagobento-stack.github.io/tiagobento.github.io/regra-de-tres.html">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
-<body data-tool="percentagens">
+<body data-tool="regra-de-tres">
 
     <header class="site-header">
       <div class="wrapper topbar">
@@ -33,38 +33,42 @@
           <span>·</span>
           <span>Sem registo</span>
         </div>
-        <h1>Calculadora de percentagens</h1>
-        <p class="intro">Use esta calculadora de percentagens para saber rapidamente quanto vale uma percentagem de um número. É útil para descontos, IVA, comissões, aumentos de preço e contas do dia a dia.</p>
+        <h1>Regra de três simples</h1>
+        <p class="intro">A regra de três simples ajuda a encontrar um valor desconhecido quando duas grandezas mantêm proporção. É útil para preços, quantidades, receitas e conversões rápidas.</p>
         
         <div class="form-grid">
-          <div><label for="percent-total">Valor base</label><input id="percent-total" type="number" step="0.01" placeholder="Ex.: 250"></div>
-          <div><label for="percent-value">Percentagem</label><input id="percent-value" type="number" step="0.01" placeholder="Ex.: 23"></div>
+          <div><label for="rule-a">A</label><input id="rule-a" type="number" step="0.01" placeholder="Ex.: 2"></div>
+          <div><label for="rule-b">B</label><input id="rule-b" type="number" step="0.01" placeholder="Ex.: 10"></div>
         </div>
-        <div style="margin-top:14px"><button id="percent-btn">Calcular</button></div>
-        <div id="percent-result" class="result"><strong>Preencha os valores e clique em calcular.</strong></div>
+        <div class="form-grid" style="margin-top:14px">
+          <div><label for="rule-c">C</label><input id="rule-c" type="number" step="0.01" placeholder="Ex.: 5"></div>
+          <div><label for="rule-x">X</label><input id="rule-x" type="text" value="?" disabled></div>
+        </div>
+        <div style="margin-top:14px"><button id="rule-btn">Calcular X</button></div>
+        <div id="rule-result" class="result"><strong>Preencha A, B e C para calcular X.</strong></div>
         
         <div class="notice">Pode usar esta ferramenta quantas vezes quiser no telemóvel ou no computador.</div>
       </section>
       <aside class="related">
         <div class="card aside-box">
           <h3>Como usar</h3>
-          <ul><li>Introduza o valor base.</li><li>Introduza a percentagem pretendida.</li><li>Clique em calcular para ver o resultado.</li></ul>
+          <ul><li>Preencha os três valores conhecidos.</li><li>Pense na relação A : B = C : X.</li><li>Clique em calcular para obter X.</li></ul>
         </div>
         <div class="card aside-box" style="margin-top:16px">
           <h3>Ferramentas relacionadas</h3>
-          <ul><li><a href="regra-de-tres.html">Regra de três simples</a></li><li><a href="dividir-conta.html">Dividir conta por amigos</a></li><li><a href="simulador-poupanca.html">Simulador de poupança</a></li><li><a href="orcamento-mensal.html">Planeador de orçamento mensal</a></li></ul>
+          <ul><li><a href="percentagens.html">Calculadora de percentagens</a></li><li><a href="media-notas.html">Calculadora de média de notas</a></li><li><a href="simulador-poupanca.html">Simulador de poupança</a></li><li><a href="orcamento-mensal.html">Planeador de orçamento mensal</a></li></ul>
         </div>
       </aside>
     </div>
     <section class="section">
       <h2>FAQ rápida</h2>
-      <div class="faq"><article class="card faq-item"><h3>Como calcular um desconto em percentagem?</h3><p>Basta colocar o preço original e a percentagem de desconto. O resultado mostra quanto vale essa percentagem do valor base.</p></article><article class="card faq-item"><h3>Serve para IVA e comissões?</h3><p>Sim. Pode usar a mesma conta para estimar IVA, comissões, taxas e aumentos percentuais.</p></article></div>
+      <div class="faq"><article class="card faq-item"><h3>Serve para receitas e preços?</h3><p>Sim. É uma das utilizações mais comuns.</p></article><article class="card faq-item"><h3>Precisa de três valores?</h3><p>Sim. Tem de inserir A, B e C.</p></article></div>
     </section>
     <section class="section">
       <div class="card panel">
         <h2>Também pode ser útil</h2>
         <p>Se esta página não resolver exatamente o que procura, experimente uma das ferramentas abaixo. Muitas tarefas do dia a dia acabam por precisar de mais do que uma conta ou utilitário.</p>
-        <div class="inline-links"><a class="button secondary" href="regra-de-tres.html">Regra de três simples</a><a class="button secondary" href="dividir-conta.html">Dividir conta por amigos</a><a class="button secondary" href="simulador-poupanca.html">Simulador de poupança</a><a class="button secondary" href="orcamento-mensal.html">Planeador de orçamento mensal</a></div>
+        <div class="inline-links"><a class="button secondary" href="percentagens.html">Calculadora de percentagens</a><a class="button secondary" href="media-notas.html">Calculadora de média de notas</a><a class="button secondary" href="simulador-poupanca.html">Simulador de poupança</a><a class="button secondary" href="orcamento-mensal.html">Planeador de orçamento mensal</a></div>
       </div>
     </section>
   </main>

@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://tiagobento-stack.github.io/tiagobento.github.io/sitemap.xml
